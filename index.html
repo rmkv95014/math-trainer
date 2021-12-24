@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel = "stylesheet "href = "styles.css"></script>
+        <title>Math Trainer</title>
+        <!--defer the script to ensure it is parsed and loads before the DOM is rendered
+        they will also execute in the process that they appear-->
+        <script src = "script.js"></script>
+    </head>
+    <body>
+        <div id = "root">
+            <div id = "logo">
+                <a href="index.html">
+                    <img src="logo.png" alt="logo" class = "home-img" width="60" height="60">
+                </a>
+            </div>
+            <div class = "math">
+                <h4 class = "problem" id = "problem"></h4>
+                <form>
+                    <input type = "number" required placeholder="Enter the answer" id = "answer">
+                    <button onclick="return validateAnswer(answer.value)">Submit!</button>
+                    <button onclick="loadProblem()">Next Problem</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

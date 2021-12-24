@@ -1,0 +1,24 @@
+body {
+    background-image: linear-gradient(to right, #FC72A2, #FF5D55);
+}
+
+#root {
+    height: 100vh;
+}
+
+.math {
+    justify-content: center;
+    position: relative;
+    top: clamp(10vh, 30%, 60vh);
+    left: clamp(10vw, 30%, 60vw);
+    align-items: center;
+    display: inline-block;
+}
+
+.problem {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+}
