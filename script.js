@@ -4,7 +4,7 @@ let answer = 0;
 function loadProblem() {
     let element = document.getElementById("problem");
     element.innerHTML="";
-    let numberOfNumbers = Math.floor(Math.random() * 10) + 2;
+    let numberOfNumbers = Math.floor(Math.random() * 4) + 2;
     for(let i = 0; i < numberOfNumbers; i++) {
         let temp = Math.floor(Math.random() * 100);
         element.innerHTML += ("" + temp);

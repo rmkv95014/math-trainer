@@ -2,21 +2,38 @@ body {
     background-image: linear-gradient(to right, #FC72A2, #FF5D55);
 }
 
-#root {
-    height: 100vh;
+#root { height: 100vh; width: 100vw;}
+#nav {
+    position: fixed;
+    top: 0;
+    left: 80vw;
+    width: 15vw;
+    height: 10vh;
+    background-color: #fff;
+    z-index: 1;
+}
+
+#nav ul {
+    display: flex;
 }
 
 .math {
     justify-content: center;
-    position: relative;
+    position: absolute;
     top: clamp(10vh, 30%, 60vh);
     left: clamp(10vw, 30%, 60vw);
+    width: clamp(15vw, 50%, 50vw);
+    height: clamp(5vh, 30%, 20vh);
     align-items: center;
+    justify-items: center;
     display: inline-block;
 }
 
 .problem {
-    text-align: center;
+    margin-left: auto;
+    font-size: clamp(6vw, 20px, 15vw);
+    margin-right: auto;
+    margin-bottom: 10px;
     font-size: 1.5rem;
     font-weight: bold;
     color: #fff;
