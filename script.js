@@ -2,6 +2,7 @@
 let answer = 0;
 
 function loadProblem() {
+    answer = 0;
     let element = document.getElementById("problem");
     element.innerHTML="";
     let numberOfNumbers = Math.floor(Math.random() * 3) + 2;
